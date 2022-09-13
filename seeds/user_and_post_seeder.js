@@ -1,37 +1,54 @@
 const usersData = [
   {
     id: 1,
-    name: "Sarah"
+    name: "Mike",
+    email: "mdismatsek@brainstation.io",
+    password: "password",
   },
   {
     id: 2,
-    name: "Michonne"
-  },
-  {
-    id: 3,
-    name: "Arya"
+    name: "Nolan",
+    email: "nknill@brainstation.io",
+    password: "password"
   }
 ];
 
 const postsData = [
   {
-    id: 1,
     user_id: 1,
     title: "Knex is so much fun!",
     content: "It's true"
   },
   {
-    id: 2,
-    user_id: 3,
+    user_id: 2,
     title: "The Night King ain't nothing",
     content: "Yup"
   },
   {
-    id: 3,
     user_id: 2,
     title: "Zombies are cool",
     content: "Way cooler than the direction TWD went"
   },
+  {
+    user_id: 1,
+    title: "The empire did nothing wrong",
+    content: "Palpatine was just trying to bring order to the galaxy"
+  },
+  {
+    user_id: 1,
+    title: "SkyDome > Rogers Centre",
+    content: "It will always be the SkyDome to me"
+  },
+  {
+    user_id: 2,
+    title: "Hamilton isn't so bad!",
+    content: "Seriously!"
+  },
+  {
+    user_id: 2,
+    title: "Blockchain",
+    content: "That's it, that's the post"
+  }
 ];
 
 /**

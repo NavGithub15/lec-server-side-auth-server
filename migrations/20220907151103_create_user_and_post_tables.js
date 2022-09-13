@@ -6,6 +6,8 @@
     return knex.schema.createTable("user", function(table) {
         table.increments("id");
         table.string("name").notNullable();
+        table.string("email").notNullable();
+        table.string("password").notNullable();
     }).createTable("post", function(table){
         table.increments("id");
         table.integer("user_id").unsigned().notNullable();

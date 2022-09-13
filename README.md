@@ -2,12 +2,13 @@
 1. Create a database
 2. Update ./knexfile.js with your connection details & database name
 3. Install packages `npm install`
-4. Run migrations `npx knex migrate:latest`
-5. Run seeds `npx knex seed:run`
-6. Start server `node server.js`
+4. Copy .env.example to .env `cp .env.example .env` and fill in datbase credentials
+5. Create a database with the same name as in .env's DB_DATABASE
+6. Run migrations `npm run migrate`
+7. Run seeds `npm run seed`
+8. Start server `npm run dev`
 
 ## Available Endpoints
-- `GET /users`
 - `GET /posts`
 
 # MySQL Review
