@@ -1,15 +1,42 @@
 # Installation
-1. Create a database
-2. Update ./knexfile.js with your connection details & database name
-3. Install packages `npm install`
-4. Copy .env.example to .env `cp .env.example .env` and fill in datbase credentials
-5. Create a database with the same name as in .env's DB_DATABASE
-6. Run migrations `npm run migrate`
-7. Run seeds `npm run seed`
-8. Start server `npm run dev`
+1. Create a database with the same name as in .env's DB_DATABASE
+2. Install packages `npm install`
+3. Copy .env.example to .env `cp .env.example .env` and fill in datbase credentials
+4. Run migrations `npm run migrate`
+5. Run seeds `npm run seed`
+6. Start server `npm run dev`
+7. Generate a secret key and add to .env's JWT_SECRET_KEY: `node -e "console.log(require('crypto').randomBytes(64).toString('hex'));"`
+
 
 ## Available Endpoints
 - `GET /posts`
+
+Request Headers:
+```
+{
+    Authorization: `Bearer {token}`
+}
+```
+
+## Endpoints in progress
+- `POST /users/login`
+
+Body:
+```
+{
+    email
+    password
+}
+```
+
+Response: 
+```
+{
+    message: "Successfully logged in",
+    token
+}
+```
+
 
 # MySQL Review
 
